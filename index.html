@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arandu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header--title">ARANDU</h1>
+  </header>
+  <main>
+    <section class="buttons">
+      <div class="btn_container words--container">
+        <button class="buttons--btn first--rounded words" onclick="addText('ã')">ã</button>
+      </div>
+      <div class="btn_container words--container">
+        <button class="buttons--btn second words" onclick="addText('ẽ')" >ẽ</button>
+      </div>
+      <div class="btn_container words--container">
+        <button class="buttons--btn first words" onclick="addText('g̃')" >g̃</button>
+      </div>
+      <div class="btn_container words--container">
+        <button class="buttons--btn second words" onclick="addText('ĩ')" >ĩ</button>
+      </div>
+      <div class="btn_container words--container">
+        <button class="buttons--btn first words" onclick="addText('ñ')" >ñ</button>
+      </div>
+      <div class="btn_container words--container">
+        <button class="buttons--btn second words" onclick="addText('õ')" >õ</button>
+      </div>
+      <div class="btn_container words--container">
+        <button class="buttons--btn first words" onclick="addText('ũ')" >ũ</button>
+      </div>
+      <div class="btn_container words--container">
+        <button class="buttons--btn second words" onclick="addText('ỹ')" >ỹ</button>
+      </div>
+      <div class="btn_container words--container last--child">
+        <button class="buttons--btn second words last--child" onclick="addText(`'`)" >'</button>
+      </div>
+    </section>
+    <section class="input">
+      <input class="input--in" type="text" placeholder="Ingrese texto....">
+      <span class="result"></span>
+    </section>
+    <div class="translate btn_container ">
+      <button onclick="traducir()" class="buttons--btn translator  pushable"> <span class="front">Traducir</span> </button>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
